@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 내비게이션 */
+.nav ul{
+    list-style: none;
+}
+
+
+
+
+section {
+    height: 100vh;
+}
+.main-section {
+    background-color: aqua;
+}
+.about-section {
+    background-color: yellow;
+}
+.like-section {
+    background-color: purple;
+}
+.end-section {
+    background-color: goldenrod;
+}
