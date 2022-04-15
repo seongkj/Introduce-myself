@@ -1,20 +1,129 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body {
+    background-color: #202020;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 100px 15%;
+    border-bottom: solid 5px purple;
+    border-top: solid 5px yellow;
+}
+.section-title {
+    font-size: 40px;
+    margin: 30px;
 }
 
 /* 내비게이션 */
+.nav {
+    /* display: flex; */
+    padding: 30px 0;
+    position: fixed;
+    /* justify-content: center; */
+    width: 100%;
+    background-color: #202020;
+    /* opacity: 0.5; */
+    /* background: transparent; */
+}
 .nav ul{
     list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+.nav a:hover {
+    color: yellow;
+    cursor: pointer;
 }
 
-
-
-
-section {
+/* 첫번재 파트 main 자기소개 */
+.main-section {
     height: 100vh;
 }
-.main-section {
+.gretting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 30px;
+}
+.myself {
+    display: flex;
+}
+#name {
+    padding: 0 10px;
+}
+/* 두번재 파트 about */
+.about-section {
+    height: 100vh;
+    flex-direction: column;
+}
+span {
+    display: block;
+}
+
+
+
+
+/* 세번째 파트 like */
+img {
+    width: 100%;
+    height: 300px;
+}
+.like-section {
+    flex-direction: column;
+}
+.like-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+    gap: 15px;
+    width: 100%;
+    
+}
+.like-box {
+    padding: 20px;
+    background-color: #373737;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.like-box p {
+    padding-top: 20px;
+}
+
+
+/* 마지막 파트 */
+.finish-section {
+    flex-direction: column;
+}
+.finish-section >a {
+    font-size: 30px;
+}
+#up {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    font-size: 30px;
+}
+
+/* .main-section {
     background-color: aqua;
 }
 .about-section {
@@ -25,4 +134,4 @@ section {
 }
 .end-section {
     background-color: goldenrod;
-}
+} */

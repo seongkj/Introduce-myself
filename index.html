@@ -6,21 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/92de419a12.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="bg">
       <nav class="nav">
         <ul>
-          <li><a href="#">about</a></li>
-          <li><a href="#">like</a></li>
-          <li><a href="#">finish</a></li>
-        </ul>
+          <li><a class="aTags" href="#main">MAIN</a></li>
+          <li><a class="aTags" href="#about">ABOUT</a></li>
+          <li><a class="aTags" href="#like">LIKE</a></li>
+          <li><a class="aTags" href="#finish">FINISH</a></li>
+        </ul>        
       </nav>
 
-      <section class="main-section"></section>
-      <section class="about-section"></section>
-      <section class="like-section"></section>
-      <section class="fifnish-section"></section>
+      <!-- 첫번째 구간 main -->
+      <section id="main" class="main-section">
+        <div class="gretting">
+          <h1>안녕하세요!</h1>
+          <div class="myself">
+            <h3>프론트엔드 개발자를 꿈꾸는</h3>
+            <h3 id="name">tjdrudwn</h3>
+            <h3>입니다.</h3>
+          </div>
+        </div>
+      </section>
+      <!-- 두번째 구간 about -->
+      <section id="about" class="about-section">
+        <h1 class="section-title">About</h1>
+        <p>
+          <div>안녕하세요! 프론트엔드 개발자를 위해 노력하는 성경주 입니다.</div> 
+          <div>html,css,Javascript를 사용하여 작은 프로젝트를 몇가지 해봤습니다. </div>
+          <div>더 크고 더 많은 프로젝트로 경험을 쌓아 개발자 되는것이 목표입니다.</div>
+        </p>
+      </section>
+      <!-- 세번째 구간 likde -->
+      <section id="like" class="like-section">
+        <h1 class="section-title">Like</h1>
+        <div class="like-container">
+          <div class="like-box">
+            <img src="img/webtoon.png" alt="" />
+            <p>자기전에 웹툰 보기 필수</p>
+          </div>
+          <div class="like-box">
+            <img src="img/철봉.png" alt="" />
+            <p>겨울을 제외하고 일주일에 4일 이상 턱걸이 하러 ㄱㄱ </p>
+          </div>
+          <div class="like-box">
+            <img src="img/movie.png" alt="" />
+            <p>장르불문 영화가 좋아</p>
+          </div>
+          <div class="like-box">
+            <p>To be continued...</p>
+          </div>
+
+        </div>
+      </section>
+      <!-- 마지막 구간 finish -->
+      <section id="finish" class="finish-section">
+        <h1 class="section-title">finish</h1>
+        <a href="https://github.com/seongkj">github</a>
+        <a id="up" class="aTags" href="#main">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </section>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
